@@ -36,11 +36,9 @@
     }
     .main {
       max-width: 1000px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       padding: 10px;
+      margin: 0 auto;
+      margin-top: 100px;
     }
     .logo {
       width: 100%;
@@ -58,6 +56,37 @@
     .intro div {
       margin-top: 20px;
     }
+    .mint_button {
+      text-align: center;
+      width: 300px;
+      border: 1px solid white;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 10px 20px;
+      color: white;
+    }
+    .mint_button a {
+      text-decoration: none;
+    }
+    .mint_button a:hover {
+      opacity: 0.7;
+    }
+    .ghost {  
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }    
+    }
     @media (max-width: 600px) {
       body {
         font-size: 18px;
@@ -74,7 +103,13 @@
     <div class="intro">
       <div>Step into the eerie atmosphere of mystery and intrigue with SPOOKY, where the whispers of the past echo through the halls of history. Unveil the enigmatic tales hidden within ancient inscriptions as we embark on a journey that's equal parts haunting and exhilarating.</div>
       <div>SPOOKY isn't just any project; it's a spectral adventure waiting to be unearthed. As a BRC20 asset haunting the Fractal UTXO chain, with a chillingly limited total supply of 1,000,000 tokens, SPOOKY invites you to explore the cryptic depths of inscriptions like never before.</div>
-      <div>Coming soon...</div>
+    </div>
+    <div class="ghost">
+      <img src="images/ghost.svg" width="50">
+    </div>
+    <div class="mint_button">
+      <!-- <a href="https://fragments.findora.org/detail/39" target="_blank">Mint and Trade $SPKY</a> -->
+      Coming soon...
     </div>
   </div>
 </body>
